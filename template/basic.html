@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static  'image/A1.jpg' %}">
+    <link rel="stylesheet" href="/static/music.css?{% now 'U' %}">
+    <link rel="stylesheet" href="/static/gallery.css?{% now 'U' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    {% block extra_head %} {% endblock %}
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body>
+
+
+    <section id="transMenus">
+        <nav id="TranIn">
+            <a href="/" id="logo">NOIZE</a>
+            <ul id="menubar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/music/songs/">All Songs</a></li>
+                <li><a href="/music/contact/">Contact</a></li>
+                <li><a href="/music/about/">About</a></li>
+                <li>
+                    <form action="/music/search" method="get"><input type="search" name="search" id="search"
+                            placeholder="search"><button type="submit" id="searchbtn">search</button></form>
+                </li>
+                <li><a href="/music/login/">SignIn</a></li>
+                
+                {% if user.is_authenticated %}
+                <li style="font-size: 18px; color: rgb(220, 147, 20); font-weight: bold;">Hi {{request.user}}</li>
+                {% endif %}
+            </ul>
+        </nav>
+    </section>
+
+    {% block body %}
+
+    {% endblock %}
+    <footer> 
+    
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="/music/contact/">Contact us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Career</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        ICopyright © 2024 - All rights reserved || Designed By: Divya Patil
+        </div>
+        </div>
+        </footer>
+    <!-- javasrcipt add -->
+    {% block javascript %}
+    {% endblock %}
+</body>
+
+</html>

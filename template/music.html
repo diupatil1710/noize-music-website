@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static  'image/A1.jpg' %}">
+    <!-- <link rel="stylesheet" href="{% static  'music.css'%}"> -->
+    <link rel="stylesheet" href="/static/music.css?{% now 'U' %}" />
+    <!-- <link rel="stylesheet" href="{% static  'playsong.css'%}"> -->
+    <link rel="stylesheet" href="/static/playsong.css?{% now 'U' %}" />
+    <!-- <link rel="stylesheet" href="{% static  'gallery.css'%}"> -->
+    <link rel="stylesheet" href="/static/gallery.css?{% now 'U' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <title>{% block title %} {% endblock %} </title>
+</head>
+
+<body>
+    
+ <!-- menu bar -->
+  <section id="transMenu">
+    <nav id="TranIn">
+        <a href="" id="logo">NOIZE</a>
+        <ul id="menubar">
+            <li><a href="" class="active">Home</a></li>
+        <li><a href="/music/songs/">All Songs</a></li>
+        <li><a href="/music/contact/">Contact</a></li>
+        <li><a href="/music/about/">About</a></li>
+        <li><form action="/music/search" method="get"><input type="search" name="search" id="search"
+            placeholder="search"><button type="submit" id="searchbtn">search</button></form></li>
+        <li><a href="/music/login/">SignIn</a></li>
+        
+        {% if user.is_authenticated %}
+        <li style="font-size: 18px; color: rgb(220, 147, 20); font-weight: bold;">Hi {{request.user}}</li>
+        <li><a href="/music/logout/">logout</a></li>
+        
+        {% endif %}
+        
+    </ul>
+    </nav>
+   <p> <marquee behavior="scroll" direction="left">Listen to all letest songs | I hope enjoying to letest song.</marquee></p>
+    <section class="titleSong">
+        
+        <h1>WE</h1>
+        <h1>BRING</h1>
+        <h1>THE</h1>
+        <h1>NOIZE</h1>
+        <div class="boxplay">
+         <a id="btn1" href="/music/songs/">Play Song</a>
+         <a id="btn2">Buy Album</a>
+        </div>
+       </section>
+  </section>
+
+
+
+
+  
+
+
+
+
+    <div class="wraper">
+        <div class="artice">
+            <div class="buttons">
+                <h1>Popular Artists </h1>
+                <div>
+                    <button class="prev">&leftarrow;</button><button class="next">&rightarrow;</button>
+                </div>
+            </div>
+            <hr>
+            <section class="cards">
+                <div class="card"><a href="jubin.html"><img src="{% static 'artise/jubin.jpg' %}" alt=""></a>
+                    <p>Jubin Nautiyal</p>
+                </div>
+                <div class="card"><a href=""><img src="{% static 'artise/tulsi.png' %}" alt="0"></a>
+                    <p>Tulsi Kumar </p>
+                </div>
+                <div class="card"><a href="/ethenic/search/"><img src="{% static 'artise/arjit.png' %}"
+                            alt="1"></a>
+                    <p>Arijit Singh</p>
+                </div>
+                <div class="card"><a href="arajit.html"><img src="{% static 'artise/arman.png' %}"
+                            alt="1"></a>
+                    <p>Armaan Malik</p>
+                </div>
+                <div class="card"><a href="arajit.html"><img src="{% static 'artise/neha.png' %}"
+                            alt="1"></a>
+                    <p>Neha Kakkar</p>
+                </div>
+                <div class="card"><a href="arajit.html"><img src="{% static 'artise/darshan.png' %}"
+                            alt="1"></a>
+                    <p>Darshan Raval</p>
+                </div>
+                <div class="card"><a href="arajit.html"><img src="{% static 'artise/kishor.png' %}"
+                            alt="1"></a>
+                    <p>Kishor Kumar</p>
+                </div>
+                <div class="card"><a href="arajit.html"><img src="{% static 'artise/sachet.png' %}"
+                            alt="1"></a>
+                    <p>Sachet Tandon</p>
+                </div>
+                <div class="card"><a href="arajit.html"><img src="{% static 'artise/sonu.png' %}"
+                            alt="1"></a>
+                    <p>Sonu Nigam</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    
+    <!-- our gallery -->
+    <div id="gallery-header"><h1 >OUR GALLERY</h1></div>
+    <section id="gallery-out">
+        
+        <div class="gallery" title="hello"><img src="{% static 'images/gallery4.jpg' %}" alt=""></div>
+        <div class="gallery"><img src="{% static 'images/gallery1.jpg' %}" alt=""></div>
+        <div class="gallery"><img src="{% static 'images/galley2.jpg' %}" alt=""></div>
+        <div class="gallery"><img src="{% static 'images/gallery3.jpg' %}" alt=""></div>
+        <div class="gallery"><img src="{% static 'images/gallery4.jpg' %}" alt=""></div>
+        <div class="gallery"><img src="{% static 'images/gallery5.jpg' %}" alt=""></div>
+    </section>
+
+   <!-- footer -->
+   <footer> 
+    
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="/music/contact/">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    ICopyright © 2024 - All rights reserved || Designed By: Divya Patil
+    </div>
+    </div>
+    </footer>
+    
+
+
+
+
+
+
+
+    <!-- javascript -->
+    <script>
+        console.log("scroll");
+        const cards = document.querySelector(".cards"),
+            card = document.querySelectorAll(".card"),
+            buttons = document.querySelectorAll(".buttons div button"),
+            prev = document.querySelectorAll(".prev"),
+            next = document.querySelectorAll(".next");
+        console.log("scroll 1");
+        cards.addEventListener("wheel", (event) => {
+            if (event.deltaY > 0) {
+                console.log("cards");
+                event.currentTarget.scrollLeft += event.currentTarget.clientWidth;
+            } else {
+                event.currentTarget.scrollLeft -= event.currentTarget.clientWidth;
+
+            }
+        });
+        buttons.forEach((button) => {
+            button.addEventListener("click", (event) => {
+                if (event.currentTarget.classList.contains("prev")) {
+                    console.log("button");
+                    cards.scrollLeft += cards.clientWidth;
+                } else {
+                    cards.scrollLeft -= cards.clientWidth;
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript" src="{% static 'songs.js' %}"></script>
+    
+</body>
+
+</html>

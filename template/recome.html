@@ -1,0 +1,14 @@
+{% extends 'basic.html' %}
+{% block title %} All songs{% endblock %}
+
+        {% block body %}
+
+         {% for i in songs %}
+        <div class="songItem">
+            <a href="/ethenic/songs/"><img src="/media/{{i.image}}" alt="1" class="songItemPlay"
+                    id="desi girl"></a>
+            <p class="songName" style="color: brown;">{{i.name}}</p>
+        </div>
+        {% endfor %}
+{% endblock %}
+

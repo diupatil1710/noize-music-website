@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Beauty</title>
+    <link rel="icon" href="{% static  'image/A2.jpg' %}">
+    <link rel="stylesheet" href="{% static  'landing.css'%}">
+
+</head>
+
+<body>
+    <h2>creative</h2>
+    <div class="container">
+
+        <span id="container1">
+
+            <a href="http://localhost:9000/">home </a>
+            <a href="www.google.com">contact</a>
+            <a href="http://localhost:8000/admin/about.html">about</a>
+
+        </span>
+    </div>
+    <picture>
+        <source srcset="..." type="image/svg+xml">
+        <img src="{% static 'image/saree.png' %}" class="img-fluid img-thumbnail" alt="...">
+      </picture>
+    <!-- <img src="{% static 'image/saree.png' %}" alt="" class="rounded float-end"> -->
+    <div class="outer">
+        <div class="flex1">
+            <img src="{% static 'image/saree.png' %}" class="img" alt="">
+            <div><a href="/ethenic/ethenicwear/">Ethelic wear</a> </div>
+        </div>
+        <div class="flex1">
+            <img src="{% static 'image/sandal.jpg' %}" class="img" alt="">
+            <div><a href="/footwear/footwear/">footwear</a></div>
+        </div>
+        <div class="flex1">
+            <img src="{% static 'image/sdress.jpg' %}" class="img" alt="">
+            <div><a href="http://localhost:8000/footwear/footwear/">westrn wear</a></div>
+        </div>
+        <div class="flex1">
+            <img src="{% static 'image/acc.jpg' %}" class="img" alt="">
+            <div><a href="http://localhost:8000/accessories/accessories/">Accessories</a> </div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi a, eligendi reiciendis itaque molestias minima
+        pariatur quia ut rem architecto omnis quis veritatis! Iure ipsa amet doloremque exercitationem eaque! Labore?
+    </p>
+<!-- 
+    <div class="inner">
+        <div class="slide fade">
+            <img src="{% static 'image/jeans.jpg'  %} ">
+            <div class="text">caption</div>
+        </div>
+        <div class="slide fade">
+            <img src="{% static 'image/croptop.jpg' %}">
+            <div class="text">caption</div>
+        </div>
+        <div class="slide fade">
+            <img src="{% static 'image/img1jpg.jpg' %}">
+            <div class="text">caption</div>
+        </div>
+        <div class="slide fade">
+            <img src="{% static 'image/lehenga.jpg' %}">
+            <div class="text">caption</div>
+        </div>
+        <div class="slide fade">
+            <img src="{% static 'image/saree.png' %}">
+            <div class="text">caption</div>
+
+        </div>
+
+        <a href="" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a href="" class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+    <script type="text/javascript" src="{% static 'slide.js' %}"></script>
+</body>
+
+</html>

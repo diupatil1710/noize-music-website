@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.form1{
+    margin: 20px;
+    
+
+}
+form{
+    background-color: rgba(83, 179, 243, 0.377);
+    height: 300px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    font-style: oblique;
+    font-size: large;
+    box-shadow: 2px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#but{
+    background-color: orangered;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+h2{
+    text-align: center;
+    text-indent: 2px;
+    text-transform: capitalize;
+}
+form{
+    margin-left:20px;
+}

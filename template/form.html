@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="{% static  'form.css'%}">
+</head>
+<body>
+    <div class="form1">
+        <form method="get" action="signin/">
+            <h2>sign up</h2>
+            <Table>
+                <tr>
+                <th>
+                    user name:
+                    <td><input type="text" placeholder="Enter your userId"></td>
+                </th>
+                </tr>
+                <tr>
+                <th>password:</th>
+                <td><input type="password" name="pass1" id="pass1" placeholder="Enter your password"></td>
+                 </tr>
+                 <tr><td>
+                <input type="submit" value="      sign up    " id="but"></td>
+                 </tr>
+                 <tr>
+                     <td><button type="submit" name="submit">submit</button></td>
+                     
+                 </tr>
+                
+
+            </Table>
+        </form>
+    </div>
+</body>
+</html>

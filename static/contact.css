@@ -1,0 +1,298 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(244, 242, 242);
+    
+    /* z-index: 1; */
+}
+#contactuspage{
+    height: 95vh; 
+    background: rgb(245, 244, 244);
+    display: block;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    
+}
+header{
+    
+    position: relative;
+    /* width: 100%; */
+    /* z-index: 3; */
+    top: 60px;
+    height: 90px;
+    margin-left: 145px;
+
+}
+header h2{
+    color: rgb(237, 159, 13);
+    font-weight: bold;
+}
+header p{
+    color: rgb(237, 159, 13);
+}
+main{
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* opacity: 1; */
+    
+}
+.send{
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background-color: rgb(13, 101, 178);
+    color: rgb(211, 153, 26);
+    opacity: .9;
+
+}
+.send div{
+    /* border-bottom: 2px solid blue; */
+    margin: 30px 10px 10px 10px;
+    width: 300px;
+    height: 50px;
+}
+.send div label{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.send h4{
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+    top: 28px;
+    margin-left: 20px;
+}
+#texta{
+    width: 100%;
+    
+}
+form{
+    position: relative;
+    /* top: 30px; */
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.hid{
+    position: relative;
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background: transparent;
+    border-bottom: 1px solid rgb(246, 208, 17);
+}
+.reach{
+    width: 30%;
+    height: 500px;
+    background-color: rgb(225, 157, 21);
+    color: aliceblue;
+    opacity: .9;
+}
+.reach h3{
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+table{
+    border-collapse: collapse;
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+.reach table tr{
+    height: 60px;
+}
+.reach table tr td{
+    /* display: inline; */
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+#btn{
+    width: 90px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(236, 172, 23);
+    color: aliceblue;
+    font-size: 18px;
+    border: none;
+    filter: drop-shadow(5px 5px 10px rgba(230, 200, 10, 0.87));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(234, 232, 232);
+    
+    /* z-index: 1; */
+/* }
+#container{
+    background: rgb(247, 246, 246);
+    display: inline;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    
+    height: 700px; 
+    margin: auto;   
+}
+header{
+    
+    position: relative; */
+    /* width: 100%; */
+    /* z-index: 3; */
+    /* top: 60px;
+    height: 90px;
+    margin-left: 145px;
+
+}
+header h2{
+    color: rgb(239, 189, 23);
+    font-weight: bold;
+}
+header p{
+    color: rgb(232, 159, 32);
+}
+#Form{
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    
+}
+.send{
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background-color: rgb(235, 172, 38);
+    color: rgba(246, 248, 250, 0.733);
+    opacity: .9;
+    
+
+}
+.send div{
+    
+
+    margin: 30px 10px 10px 10px;
+    width: 200px;
+    height: 50px;
+    
+}
+.send div label{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.send h4{
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+    top: 28px;
+    margin-left: 20px;
+}
+#texta{
+    width: 100%;
+    
+}
+
+.hid{
+    position: relative;
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background: transparent;
+    background-color: rgba(225, 145, 27, 0.733);
+}
+.reach{
+    width: 30%;
+    height: 500px;
+    background-color: rgba(29, 118, 170, 0.733);
+    color: aliceblue;
+    opacity: .9;
+}
+.reach h3{
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+table{
+    border-collapse: collapse;
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+.reach table tr{
+    height: 60px;
+}
+.reach table tr td{
+    /* display: inline; */
+    /* display: flex;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+#btn{
+    width: 90px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgba(29, 118, 170, 0.733);
+    color: aliceblue;
+    font-size: 18px;
+    border: none;
+    filter: drop-shadow(5px 5px 10px rgba(30, 30, 246, 0.87));
+} */ 

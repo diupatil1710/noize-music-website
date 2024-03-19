@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+Body{
+    background: black;
+    background-size: cover;
+}
+.trending{
+    padding: 30px;
+    align-items: center;
+    position: relative;
+}
+.trending div span{
+    display: inline-flex;
+    align-items: center;
+   
+}
+.head{
+    border-bottom: 2px solid white;
+}
+.trending span i{
+    width: 40px;
+    height: 40px;
+    background: rgb(72, 70, 70);
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+}
+.trending span i a{
+    position: relative;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+    left: 10px;
+    color: aliceblue;
+}
+.trending h1{
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    color: aliceblue;
+    height: 50px;
+}
+.trending section{
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* flex-flow: row; */
+    flex-direction: row;
+    /* flex-flow: row; */
+    position: relative;
+    top: 20px;
+}
+.trending section div{
+    width: 200px;
+    height: 240px;
+    align-items: center;
+    /* display: inline-flex; */
+    flex-wrap: wrap;
+    flex-flow: row;
+    position: relative;
+    margin: 10px;
+}
+.trending section div img{
+    position: relative;
+    left: 10px;
+    width: 90%;
+    transition: scale 400ms;
+    /* border-radius: 33% 68% 33% 67% / 64% 68% 32% 36% ; */
+    
+}
+.trending section div p{
+    padding-top: 10px;
+    color: aliceblue;
+    text-align: center;
+}
+.songItem{
+    overflow: hidden;
+}
+.songItem:hover img{
+    scale: 120%;
+}

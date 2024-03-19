@@ -1,0 +1,37 @@
+{% extends 'basic.html' %}
+{% block title %} All songs{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="/static/allsong.css?{% now 'U' %}"/>
+{% endblock %}
+{% block body %}
+<div class="container">
+  
+  <div class="main">
+    <div class="currentplaying">
+
+      <p class="heading">Currently Playing</p>
+    </div>
+    {% for i in song %}
+    <a href="/music/songs/" class="stop">
+      <a href="/music/songs/{{i.song_id}}" class="stop">
+      <div class="loader">
+        <div class="song">
+          <p class="name" style="text-decoration: none;">{{i.name}}</p>
+          <p class="artist" style="text-decoration: none;">{{i.singer}}</p>
+        </div>
+        <div class="albumcover"><img src="/media/{{i.image}}" alt=""></div>
+
+        <div class="loading">
+
+          <div class="load"></div>
+          <div class="load"></div>
+          <div class="load"></div>
+          <div class="load"></div>
+        </div>
+      </div>
+    </a>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

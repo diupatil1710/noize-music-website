@@ -1,0 +1,169 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(251, 250, 250);
+    width: 100%;
+   
+}
+.container{
+    /* width: 100%; */
+    margin: 10px;
+    background-image: url("/static/images/b1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 10/3;
+    object-fit: contain;
+    
+}
+
+.container #TopImage{
+    position: relative;
+    
+    width: 100%;
+    /* height: 400px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px 5px rgb(56, 56, 52);
+    /* border: 2px solid rgb(49, 43, 43); */
+    /* text-align: center; */
+    
+}
+.head{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+}
+    
+
+main h3{
+    position: relative;
+    top: 60px;
+    font-weight: bold;
+    font-size: 28px;
+    color: aliceblue;
+    padding-bottom: 10px;
+}
+.head{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: rgb(47, 46, 46);
+    border-radius: 50%;
+    color: aliceblue;
+    padding: 6px;
+    top: 13px;
+    left: 20px;
+}
+.head a{
+    position: absolute;
+    top: 3px;
+    padding: 0px 10px 10px 10px;
+    color: aliceblue;
+    font-size: 28px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#arjit{
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 14vh;
+    text-transform: capitalize;
+     left: 30px;
+
+} 
+main{
+    margin: 20px;
+    height: 200px;
+}
+.playall{
+    /* background: gold; */
+    position: relative;
+    top: 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.playall div{
+    position: relative;
+    left: 30px;
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    background: rgb(56, 230, 13);
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 4px rgb(63, 224, 42));
+}
+.playall div img{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    left: 19px;
+    cursor: pointer;
+}
+.playall button{
+    position: relative;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    color: aliceblue;
+    background: black;
+    border: 1px solid white;
+    font-size: 15px;
+    font-weight: bold;
+    left: 65px;
+}
+.PlayList{
+    padding: 10px 0;
+    position: relative;
+    top: 40px;
+    margin: 10px 30px;
+}
+table{
+    /* background: wheat; */
+    position: relative;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    border-collapse: collapse;
+}
+tr{
+    /* background: powderblue; */
+    color: aliceblue;
+    height: 40px;
+    border-radius: 5px;
+}
+tr:hover {background-color: rgb(61, 58, 57);
+border: none;
+border-radius: 20px;
+}
+td img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+td{
+    color: azure;
+    height: 80px;
+    margin: 30px 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+
+}
+table, tr,td{
+    border: none;
+}
+#All_Right_Now{
+    position: relative;
+    /* left: 10px; */
+}

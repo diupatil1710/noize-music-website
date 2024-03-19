@@ -1,0 +1,64 @@
+<!-- <!doctype html> -->
+{% extends 'basic.html' %}
+{% load static %}
+{% block extra_head %}
+<link rel="stylesheet" href="/static/contact.css?{% now 'U' %}" />
+{% endblock %}
+{% block body %}
+<div id="contactuspage">
+    <header>
+        <h2>Connect with us</h2>
+        <p>We would love ti respond to your queries and help you successed</p>
+        <p>Feel free to get in touch with us</p>
+    </header>
+    <main>
+        <div class="send">
+            <h4>send your request</h4>
+            <form action="{% url 'contactus' %}" method="post">
+                {% csrf_token %}
+                <div><label for="">name</label>
+                    <input type="text" name="username" class="hid" placeholder="Divya Patil">
+                </div>
+                <div>
+                    <label for="">phone</label>
+                    <input type="number" name="phone" class="hid" placeholder="+999 xxx xxxx">
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="email" class="hid" placeholder="divyapatil88@gmail.com">
+                </div>
+                <div>
+                    <label for="">Subject</label>
+                    <input type="text" name="subject" class="hid" placeholder="Enter your subject">
+                </div>
+
+                <div id="texta" style="height: 90px;"><label for="">message</label>
+                    <textarea name="message" id="" cols="30" rows="10" class="hid"
+                        style="height: 88px; border: 1px solid rgb(247, 217, 24);"
+                        placeholder="Your Message"></textarea>
+                </div>
+                <div><input type="submit" value="send" id="btn"></div>
+            </form>
+        </div>
+        <div class="reach">
+            <h3>Reach Us</h3>
+            <table>
+                <tr>
+                    <td style="width: 110px;">Email</td>
+                    <td>DivyaPatil99@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+90879899999</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Sujalpur,post borala,tal-dist.nandurbar</td>
+                </tr>
+            </table>
+
+
+        </div>
+    </main>
+</div>
+{% endblock %}

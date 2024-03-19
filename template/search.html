@@ -1,0 +1,55 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %} All songs{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="/static/allsong.css?{% now 'U' %}" />
+<link rel="stylesheet" href="/static/arajit.css? {% now 'U' %}" />
+{% endblock %}
+{% block body %}
+
+
+<section class="container">
+  <img src="/static/image/arjit.png" id="TopImage">
+  <div class="head">
+    <a href="/">&lt;</a>
+  </div>
+  <h1 id="arjit">Arajit Singh</h1>
+</section>
+<main>
+  <div class="playall">
+    <div><img id="audioauto" src="{% static 'image/play-solid.svg' %}" alt=""></div><button>follow</button>
+  </div>
+  {% if song %}
+  {% for p in song %}
+  <a href="/music/songs/">
+    <a href="/music/songs/{{p.song_id}}">
+      <div class="loader">
+        <div class="song">
+          <p class="name">{{p.name}}</p>
+          <p class="artist">{{p.singer}}</p>
+        </div>
+        <div class="albumcover"><img src="/media/{{p.image}}" alt=""></div>
+
+        <div class="loading">
+
+          <div class="load"></div>
+          <div class="load"></div>
+          <div class="load"></div>
+          <div class="load"></div>
+        </div>
+      </div>
+    </a>
+  </a>
+  {% endfor %}
+  {% else %}
+ <div style="color: aliceblue;">song not found</div>
+{% endif %}
+</main>
+</div>
+
+
+
+
+<!-- <script src="song.js"></script> -->
+<script src="auto.js"></script>
+{% endblock %}

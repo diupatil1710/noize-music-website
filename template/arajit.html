@@ -1,0 +1,48 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %} All songs{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="/static/allsong.css" />
+<link rel="stylesheet" href="/static/arajit.css" />
+{% endblock %}
+{% block body %}
+<section class="container">
+ 
+  <div class="head">
+    <a href="musicweb.html">&lt;</a>
+  </div>
+  <h1 id="arjit">Arajit Singh</h1>
+</section>
+<main>
+  <div class="playall">
+    <div><img id="audioauto" src="{% static 'image/play-solid.svg' %}" alt=""></div><button>follow</button>
+  </div>
+  {% for i in song %}
+  <a href="/music/songs/">
+    <a href="/music/songs/{{i.song_id}}">
+      <div class="loader">
+        <div class="song">
+          <p class="name">{{i.name}}</p>
+          <p class="artist">{{i.singer}}</p>
+        </div>
+        <div class="albumcover"><img src="/media/{{i.image}}" alt=""></div>
+
+        <div class="loading">
+
+          <div class="load"></div>
+          <div class="load"></div>
+          <div class="load"></div>
+          <div class="load"></div>
+        </div>
+      </div>
+    </a>
+  </a>
+  {% endfor %}
+</main>
+</div>
+
+
+
+<!-- <script src="song.js"></script> -->
+<script src="auto.js"></script>
+{% endblock %}
